@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Horas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Banco de Horas</h1>
+        <form id="userForm" onsubmit="return false;">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            <label for="matricula">Número de Matrícula:</label>
+            <input type="text" id="matricula" required>
+            <label for="entrada">Hora de Entrada:</label>
+            <input type="time" id="entrada" required>
+            <label for="saida">Hora de Saída:</label>
+            <input type="time" id="saida" required>
+            <button onclick="adicionarUsuario()">Adicionar Usuário</button>
+        </form>
+        <button onclick="window.location.href = 'tabela.html'">Ver Tabela de Usuários</button>
+        <div id="usuarios">
+            <!-- Lista de usuários será exibida aqui -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
